@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EnrollDeviceDetailInfoCell" id="KGk-i7-Jjw" customClass="EnrollDeviceDetailInfoCell" customModule="MDMDeviceConfig" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQp-p5-Gvn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Assigned User Id:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-JY-MSd">
+                                <rect key="frame" x="7" y="9" width="123" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="59e0af13051c6032dcb8b18f" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-hQ-vw7">
+                                <rect key="frame" x="139" y="9" width="173" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OLq-hQ-vw7" secondAttribute="trailing" constant="8" id="0zQ-Zo-S7J"/>
+                            <constraint firstItem="OLq-hQ-vw7" firstAttribute="centerY" secondItem="SQp-p5-Gvn" secondAttribute="centerY" id="E9A-TC-wZJ"/>
+                            <constraint firstItem="Ond-JY-MSd" firstAttribute="leading" secondItem="SQp-p5-Gvn" secondAttribute="leading" constant="8" id="Hqx-fG-WCl"/>
+                            <constraint firstItem="Ond-JY-MSd" firstAttribute="centerY" secondItem="SQp-p5-Gvn" secondAttribute="centerY" id="Zn8-Ui-VzR"/>
+                            <constraint firstItem="OLq-hQ-vw7" firstAttribute="leading" secondItem="Ond-JY-MSd" secondAttribute="trailing" constant="8" id="eAn-Vc-ivP"/>
+                            <constraint firstItem="Ond-JY-MSd" firstAttribute="top" secondItem="SQp-p5-Gvn" secondAttribute="top" constant="9" id="mC0-HD-KxP"/>
+                            <constraint firstItem="OLq-hQ-vw7" firstAttribute="top" secondItem="SQp-p5-Gvn" secondAttribute="top" constant="9" id="qcP-mR-VJz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLQ-vp-1iy">
+                        <rect key="frame" x="0.0" y="41" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Xxf-lu-86e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iLQ-vp-1iy" secondAttribute="bottom" constant="1" id="3Pg-us-mkT"/>
+                    <constraint firstAttribute="bottom" secondItem="SQp-p5-Gvn" secondAttribute="bottom" id="8nB-GC-A1w"/>
+                    <constraint firstItem="SQp-p5-Gvn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DMd-fs-Md3"/>
+                    <constraint firstAttribute="trailing" secondItem="SQp-p5-Gvn" secondAttribute="trailing" id="TXc-9X-PqW"/>
+                    <constraint firstAttribute="trailing" secondItem="iLQ-vp-1iy" secondAttribute="trailing" id="Zc0-Xw-6oZ"/>
+                    <constraint firstItem="SQp-p5-Gvn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tak-hQ-ea0"/>
+                    <constraint firstItem="iLQ-vp-1iy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yB2-JN-Zwd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="keyLabel" destination="Ond-JY-MSd" id="kgc-8x-3GU"/>
+                <outlet property="valueLabel" destination="OLq-hQ-vw7" id="EvF-Cs-JFg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

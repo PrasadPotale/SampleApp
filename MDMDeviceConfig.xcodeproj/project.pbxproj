@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B7BDB521F84F6CB0055F69F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB511F84F6CB0055F69F /* AppDelegate.swift */; };
+		4B7BDB541F84F6CB0055F69F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB531F84F6CB0055F69F /* ViewController.swift */; };
+		4B7BDB571F84F6CB0055F69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BDB551F84F6CB0055F69F /* Main.storyboard */; };
+		4B7BDB591F84F6CB0055F69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BDB581F84F6CB0055F69F /* Assets.xcassets */; };
+		4B7BDB5C1F84F6CB0055F69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BDB5A1F84F6CB0055F69F /* LaunchScreen.storyboard */; };
+		4B7BDB671F84F9D60055F69F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BDB651F84F9D60055F69F /* background.png */; };
+		4B7BDB681F84F9D60055F69F /* kahunaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BDB661F84F9D60055F69F /* kahunaLogo.png */; };
+		4B7BDB6E1F8508EC0055F69F /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB6B1F8508EC0055F69F /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B7BDB6F1F8508EC0055F69F /* KeychainItemWrapperArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB6D1F8508EC0055F69F /* KeychainItemWrapperArc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B7BDB751F850BAD0055F69F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB741F850BAD0055F69F /* Constants.swift */; };
+		4B7BDB771F850BEB0055F69F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB761F850BEB0055F69F /* Utils.swift */; };
+		4B7BDB791F850C080055F69F /* HTTPRequestBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB781F850C080055F69F /* HTTPRequestBlock.swift */; };
+		4B7BDB7B1F850CB20055F69F /* CheckConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB7A1F850CB20055F69F /* CheckConnectivity.swift */; };
+		4B7BDB7D1F850D960055F69F /* ErrorCodesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB7C1F850D960055F69F /* ErrorCodesHandler.swift */; };
+		4B7BDB801F8511CE0055F69F /* CheckResponseFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB7F1F8511CE0055F69F /* CheckResponseFormat.swift */; };
+		4B7BDB821F8511E60055F69F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BDB811F8511E60055F69F /* Result.swift */; };
+		57007B551FA08A94006E0D57 /* EnrollDeviceDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57007B541FA08A94006E0D57 /* EnrollDeviceDetailInfoViewController.swift */; };
+		57007B581FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57007B561FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.swift */; };
+		57007B591FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57007B571FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.xib */; };
+		5709E0F01F8758FE00816658 /* MDM_Enroll_Status_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0E81F8758FE00816658 /* MDM_Enroll_Status_Request.swift */; };
+		5709E0F11F8758FE00816658 /* MDM_Enroll_Status_Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0EA1F8758FE00816658 /* MDM_Enroll_Status_Response.swift */; };
+		5709E0F21F8758FE00816658 /* UniqueDeviceIDRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0ED1F8758FE00816658 /* UniqueDeviceIDRequest.swift */; };
+		5709E0F31F8758FE00816658 /* UniqueDeviceIDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0EF1F8758FE00816658 /* UniqueDeviceIDResponse.swift */; };
+		5709E0F81F87590800816658 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0F51F87590800816658 /* LoginResponseModel.swift */; };
+		5709E0FA1F87590800816658 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709E0F71F87590800816658 /* User.swift */; };
+		5717DE001F86516B002BDB8D /* LocalizationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717DDFF1F86516B002BDB8D /* LocalizationSystem.m */; };
+		5717DE021F865D79002BDB8D /* ViewController+APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717DE011F865D79002BDB8D /* ViewController+APICall.swift */; };
+		5717DE0B1F866655002BDB8D /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717DE091F866655002BDB8D /* LoginData.swift */; };
+		5717DE0C1F866655002BDB8D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5717DE0A1F866655002BDB8D /* LoginRequest.swift */; };
+		571CC4691F87869800D85F97 /* Timberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571CC4681F87869800D85F97 /* Timberjack.swift */; };
+		572608A01F8E41AA007C68F0 /* OpenWebLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5726089F1F8E41AA007C68F0 /* OpenWebLinkViewController.swift */; };
+		5752FB911FB980AF0075C661 /* AssignedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5752FB901FB980AF0075C661 /* AssignedUser.swift */; };
+		FAC74B0D582033F83DE1C553 /* Pods_MDMDeviceConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDCF8C58FCA7BA53AF098C9 /* Pods_MDMDeviceConfig.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EDCF8C58FCA7BA53AF098C9 /* Pods_MDMDeviceConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDMDeviceConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7BDB4E1F84F6CB0055F69F /* MDMDeviceConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDMDeviceConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7BDB511F84F6CB0055F69F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B7BDB531F84F6CB0055F69F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B7BDB561F84F6CB0055F69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B7BDB581F84F6CB0055F69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B7BDB5B1F84F6CB0055F69F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B7BDB5D1F84F6CB0055F69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7BDB631F84F6EE0055F69F /* MDMDeviceConfig.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MDMDeviceConfig.entitlements; sourceTree = "<group>"; };
+		4B7BDB651F84F9D60055F69F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		4B7BDB661F84F9D60055F69F /* kahunaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kahunaLogo.png; sourceTree = "<group>"; };
+		4B7BDB6A1F8508EC0055F69F /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		4B7BDB6B1F8508EC0055F69F /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		4B7BDB6C1F8508EC0055F69F /* KeychainItemWrapperArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapperArc.h; sourceTree = "<group>"; };
+		4B7BDB6D1F8508EC0055F69F /* KeychainItemWrapperArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapperArc.m; sourceTree = "<group>"; };
+		4B7BDB701F85092D0055F69F /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		4B7BDB741F850BAD0055F69F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4B7BDB761F850BEB0055F69F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4B7BDB781F850C080055F69F /* HTTPRequestBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestBlock.swift; sourceTree = "<group>"; };
+		4B7BDB7A1F850CB20055F69F /* CheckConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnectivity.swift; sourceTree = "<group>"; };
+		4B7BDB7C1F850D960055F69F /* ErrorCodesHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodesHandler.swift; sourceTree = "<group>"; };
+		4B7BDB7F1F8511CE0055F69F /* CheckResponseFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckResponseFormat.swift; sourceTree = "<group>"; };
+		4B7BDB811F8511E60055F69F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		57007B541FA08A94006E0D57 /* EnrollDeviceDetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollDeviceDetailInfoViewController.swift; sourceTree = "<group>"; };
+		57007B561FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollDeviceDetailInfoCell.swift; sourceTree = "<group>"; };
+		57007B571FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnrollDeviceDetailInfoCell.xib; sourceTree = "<group>"; };
+		5709E0E81F8758FE00816658 /* MDM_Enroll_Status_Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDM_Enroll_Status_Request.swift; sourceTree = "<group>"; };
+		5709E0EA1F8758FE00816658 /* MDM_Enroll_Status_Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDM_Enroll_Status_Response.swift; sourceTree = "<group>"; };
+		5709E0ED1F8758FE00816658 /* UniqueDeviceIDRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueDeviceIDRequest.swift; sourceTree = "<group>"; };
+		5709E0EF1F8758FE00816658 /* UniqueDeviceIDResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueDeviceIDResponse.swift; sourceTree = "<group>"; };
+		5709E0F51F87590800816658 /* LoginResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		5709E0F71F87590800816658 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5717DDFE1F86516B002BDB8D /* LocalizationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationSystem.h; sourceTree = "<group>"; };
+		5717DDFF1F86516B002BDB8D /* LocalizationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationSystem.m; sourceTree = "<group>"; };
+		5717DE011F865D79002BDB8D /* ViewController+APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+APICall.swift"; sourceTree = "<group>"; };
+		5717DE091F866655002BDB8D /* LoginData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		5717DE0A1F866655002BDB8D /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		571CC4681F87869800D85F97 /* Timberjack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timberjack.swift; sourceTree = "<group>"; };
+		5726089F1F8E41AA007C68F0 /* OpenWebLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWebLinkViewController.swift; sourceTree = "<group>"; };
+		5752FB901FB980AF0075C661 /* AssignedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignedUser.swift; sourceTree = "<group>"; };
+		87A8ED02CF64F10E8E32B610 /* Pods-MDMDeviceConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDMDeviceConfig.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDMDeviceConfig/Pods-MDMDeviceConfig.debug.xcconfig"; sourceTree = "<group>"; };
+		A3069FDA058361515490CBF6 /* Pods-MDMDeviceConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDMDeviceConfig.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDMDeviceConfig/Pods-MDMDeviceConfig.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B7BDB4B1F84F6CB0055F69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC74B0D582033F83DE1C553 /* Pods_MDMDeviceConfig.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E43AF79C8E0EC08DDD6D42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCF8C58FCA7BA53AF098C9 /* Pods_MDMDeviceConfig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B7BDB451F84F6CB0055F69F = {
+			isa = PBXGroup;
+			children = (
+				4B7BDB501F84F6CB0055F69F /* MDMDeviceConfig */,
+				5717DDFB1F865130002BDB8D /* SupportingFiles */,
+				4B7BDB4F1F84F6CB0055F69F /* Products */,
+				C59B2A638012A15CC8CC5B03 /* Pods */,
+				30E43AF79C8E0EC08DDD6D42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B7BDB4F1F84F6CB0055F69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BDB4E1F84F6CB0055F69F /* MDMDeviceConfig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B7BDB501F84F6CB0055F69F /* MDMDeviceConfig */ = {
+			isa = PBXGroup;
+			children = (
+				57007B531FA08A62006E0D57 /* EnrollDeviceInfo */,
+				5726089E1F8E41AA007C68F0 /* WebView */,
+				4B7BDB631F84F6EE0055F69F /* MDMDeviceConfig.entitlements */,
+				4B7BDB511F84F6CB0055F69F /* AppDelegate.swift */,
+				4B7BDB531F84F6CB0055F69F /* ViewController.swift */,
+				5717DE011F865D79002BDB8D /* ViewController+APICall.swift */,
+				4B7BDB701F85092D0055F69F /* Bridge.h */,
+				4B7BDB551F84F6CB0055F69F /* Main.storyboard */,
+				4B7BDB581F84F6CB0055F69F /* Assets.xcassets */,
+				4B7BDB5A1F84F6CB0055F69F /* LaunchScreen.storyboard */,
+				4B7BDB5D1F84F6CB0055F69F /* Info.plist */,
+				4B7BDB741F850BAD0055F69F /* Constants.swift */,
+				4B7BDB7E1F8511C50055F69F /* APICalls */,
+				4B7BDB711F850B9B0055F69F /* Communication */,
+				4B7BDB691F8508EC0055F69F /* KeyChainWrapper */,
+				4B7BDB641F84F9D60055F69F /* Images */,
+			);
+			path = MDMDeviceConfig;
+			sourceTree = "<group>";
+		};
+		4B7BDB641F84F9D60055F69F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BDB651F84F9D60055F69F /* background.png */,
+				4B7BDB661F84F9D60055F69F /* kahunaLogo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4B7BDB691F8508EC0055F69F /* KeyChainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BDB6A1F8508EC0055F69F /* KeychainItemWrapper.h */,
+				4B7BDB6B1F8508EC0055F69F /* KeychainItemWrapper.m */,
+				4B7BDB6C1F8508EC0055F69F /* KeychainItemWrapperArc.h */,
+				4B7BDB6D1F8508EC0055F69F /* KeychainItemWrapperArc.m */,
+			);
+			path = KeyChainWrapper;
+			sourceTree = "<group>";
+		};
+		4B7BDB711F850B9B0055F69F /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				571CC4681F87869800D85F97 /* Timberjack.swift */,
+				4B7BDB7A1F850CB20055F69F /* CheckConnectivity.swift */,
+				4B7BDB781F850C080055F69F /* HTTPRequestBlock.swift */,
+				4B7BDB7C1F850D960055F69F /* ErrorCodesHandler.swift */,
+				4B7BDB761F850BEB0055F69F /* Utils.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		4B7BDB7E1F8511C50055F69F /* APICalls */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0E61F8758FE00816658 /* MDM_Enroll_Status */,
+				5709E0EB1F8758FE00816658 /* UniqueDeviceID */,
+				5717DE071F866655002BDB8D /* Login */,
+				4B7BDB7F1F8511CE0055F69F /* CheckResponseFormat.swift */,
+				4B7BDB811F8511E60055F69F /* Result.swift */,
+			);
+			path = APICalls;
+			sourceTree = "<group>";
+		};
+		57007B531FA08A62006E0D57 /* EnrollDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				57007B541FA08A94006E0D57 /* EnrollDeviceDetailInfoViewController.swift */,
+				57007B561FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.swift */,
+				57007B571FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.xib */,
+			);
+			path = EnrollDeviceInfo;
+			sourceTree = "<group>";
+		};
+		5709E0E61F8758FE00816658 /* MDM_Enroll_Status */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0E71F8758FE00816658 /* MDM_Status_Request */,
+				5709E0E91F8758FE00816658 /* MDM_Status_Response */,
+			);
+			path = MDM_Enroll_Status;
+			sourceTree = "<group>";
+		};
+		5709E0E71F8758FE00816658 /* MDM_Status_Request */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0E81F8758FE00816658 /* MDM_Enroll_Status_Request.swift */,
+			);
+			path = MDM_Status_Request;
+			sourceTree = "<group>";
+		};
+		5709E0E91F8758FE00816658 /* MDM_Status_Response */ = {
+			isa = PBXGroup;
+			children = (
+				5752FB901FB980AF0075C661 /* AssignedUser.swift */,
+				5709E0EA1F8758FE00816658 /* MDM_Enroll_Status_Response.swift */,
+			);
+			path = MDM_Status_Response;
+			sourceTree = "<group>";
+		};
+		5709E0EB1F8758FE00816658 /* UniqueDeviceID */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0EC1F8758FE00816658 /* UniqueDeviceID_Request */,
+				5709E0EE1F8758FE00816658 /* UniqueDeviceID_Response */,
+			);
+			path = UniqueDeviceID;
+			sourceTree = "<group>";
+		};
+		5709E0EC1F8758FE00816658 /* UniqueDeviceID_Request */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0ED1F8758FE00816658 /* UniqueDeviceIDRequest.swift */,
+			);
+			path = UniqueDeviceID_Request;
+			sourceTree = "<group>";
+		};
+		5709E0EE1F8758FE00816658 /* UniqueDeviceID_Response */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0EF1F8758FE00816658 /* UniqueDeviceIDResponse.swift */,
+			);
+			path = UniqueDeviceID_Response;
+			sourceTree = "<group>";
+		};
+		5709E0F41F87590800816658 /* LoginResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0F51F87590800816658 /* LoginResponseModel.swift */,
+				5709E0F71F87590800816658 /* User.swift */,
+			);
+			path = LoginResponseModel;
+			sourceTree = "<group>";
+		};
+		5717DDFB1F865130002BDB8D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5717DDFC1F86516B002BDB8D /* ExternalLibs */,
+			);
+			name = SupportingFiles;
+			path = MDMDeviceConfig/SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5717DDFC1F86516B002BDB8D /* ExternalLibs */ = {
+			isa = PBXGroup;
+			children = (
+				5717DDFD1F86516B002BDB8D /* Localization */,
+			);
+			path = ExternalLibs;
+			sourceTree = "<group>";
+		};
+		5717DDFD1F86516B002BDB8D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5717DDFE1F86516B002BDB8D /* LocalizationSystem.h */,
+				5717DDFF1F86516B002BDB8D /* LocalizationSystem.m */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		5717DE071F866655002BDB8D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5709E0F41F87590800816658 /* LoginResponseModel */,
+				5717DE081F866655002BDB8D /* LoginRequestModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5717DE081F866655002BDB8D /* LoginRequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				5717DE091F866655002BDB8D /* LoginData.swift */,
+				5717DE0A1F866655002BDB8D /* LoginRequest.swift */,
+			);
+			path = LoginRequestModel;
+			sourceTree = "<group>";
+		};
+		5726089E1F8E41AA007C68F0 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				5726089F1F8E41AA007C68F0 /* OpenWebLinkViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		C59B2A638012A15CC8CC5B03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A8ED02CF64F10E8E32B610 /* Pods-MDMDeviceConfig.debug.xcconfig */,
+				A3069FDA058361515490CBF6 /* Pods-MDMDeviceConfig.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B7BDB4D1F84F6CB0055F69F /* MDMDeviceConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7BDB601F84F6CB0055F69F /* Build configuration list for PBXNativeTarget "MDMDeviceConfig" */;
+			buildPhases = (
+				1E283B8918770190418AB599 /* [CP] Check Pods Manifest.lock */,
+				4B7BDB4A1F84F6CB0055F69F /* Sources */,
+				4B7BDB4B1F84F6CB0055F69F /* Frameworks */,
+				4B7BDB4C1F84F6CB0055F69F /* Resources */,
+				AD03A6B427498549A33A3F1E /* [CP] Embed Pods Frameworks */,
+				BD2133D477253ED20953D67C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDMDeviceConfig;
+			productName = MDMDeviceConfig;
+			productReference = 4B7BDB4E1F84F6CB0055F69F /* MDMDeviceConfig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B7BDB461F84F6CB0055F69F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kahuna Systems";
+				TargetAttributes = {
+					4B7BDB4D1F84F6CB0055F69F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GD37G3RSL6;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4B7BDB491F84F6CB0055F69F /* Build configuration list for PBXProject "MDMDeviceConfig" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B7BDB451F84F6CB0055F69F;
+			productRefGroup = 4B7BDB4F1F84F6CB0055F69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B7BDB4D1F84F6CB0055F69F /* MDMDeviceConfig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B7BDB4C1F84F6CB0055F69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7BDB5C1F84F6CB0055F69F /* LaunchScreen.storyboard in Resources */,
+				4B7BDB671F84F9D60055F69F /* background.png in Resources */,
+				57007B591FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.xib in Resources */,
+				4B7BDB591F84F6CB0055F69F /* Assets.xcassets in Resources */,
+				4B7BDB571F84F6CB0055F69F /* Main.storyboard in Resources */,
+				4B7BDB681F84F9D60055F69F /* kahunaLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E283B8918770190418AB599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD03A6B427498549A33A3F1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDMDeviceConfig/Pods-MDMDeviceConfig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2133D477253ED20953D67C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDMDeviceConfig/Pods-MDMDeviceConfig-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B7BDB4A1F84F6CB0055F69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5709E0F81F87590800816658 /* LoginResponseModel.swift in Sources */,
+				4B7BDB7D1F850D960055F69F /* ErrorCodesHandler.swift in Sources */,
+				4B7BDB541F84F6CB0055F69F /* ViewController.swift in Sources */,
+				572608A01F8E41AA007C68F0 /* OpenWebLinkViewController.swift in Sources */,
+				4B7BDB801F8511CE0055F69F /* CheckResponseFormat.swift in Sources */,
+				5717DE0C1F866655002BDB8D /* LoginRequest.swift in Sources */,
+				4B7BDB6F1F8508EC0055F69F /* KeychainItemWrapperArc.m in Sources */,
+				4B7BDB521F84F6CB0055F69F /* AppDelegate.swift in Sources */,
+				5717DE001F86516B002BDB8D /* LocalizationSystem.m in Sources */,
+				4B7BDB771F850BEB0055F69F /* Utils.swift in Sources */,
+				5717DE0B1F866655002BDB8D /* LoginData.swift in Sources */,
+				5709E0FA1F87590800816658 /* User.swift in Sources */,
+				4B7BDB791F850C080055F69F /* HTTPRequestBlock.swift in Sources */,
+				57007B581FA08C56006E0D57 /* EnrollDeviceDetailInfoCell.swift in Sources */,
+				4B7BDB6E1F8508EC0055F69F /* KeychainItemWrapper.m in Sources */,
+				4B7BDB751F850BAD0055F69F /* Constants.swift in Sources */,
+				4B7BDB7B1F850CB20055F69F /* CheckConnectivity.swift in Sources */,
+				5709E0F21F8758FE00816658 /* UniqueDeviceIDRequest.swift in Sources */,
+				5717DE021F865D79002BDB8D /* ViewController+APICall.swift in Sources */,
+				5709E0F31F8758FE00816658 /* UniqueDeviceIDResponse.swift in Sources */,
+				5752FB911FB980AF0075C661 /* AssignedUser.swift in Sources */,
+				5709E0F11F8758FE00816658 /* MDM_Enroll_Status_Response.swift in Sources */,
+				571CC4691F87869800D85F97 /* Timberjack.swift in Sources */,
+				5709E0F01F8758FE00816658 /* MDM_Enroll_Status_Request.swift in Sources */,
+				4B7BDB821F8511E60055F69F /* Result.swift in Sources */,
+				57007B551FA08A94006E0D57 /* EnrollDeviceDetailInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B7BDB551F84F6CB0055F69F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B7BDB561F84F6CB0055F69F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B7BDB5A1F84F6CB0055F69F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B7BDB5B1F84F6CB0055F69F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B7BDB5E1F84F6CB0055F69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3ed89f80-1e33-4a12-a313-4809e8fa4265";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B7BDB5F1F84F6CB0055F69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3ed89f80-1e33-4a12-a313-4809e8fa4265";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B7BDB611F84F6CB0055F69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A8ED02CF64F10E8E32B610 /* Pods-MDMDeviceConfig.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MDMDeviceConfig/MDMDeviceConfig.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				INFOPLIST_FILE = MDMDeviceConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahuna.MDMClientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3ed89f80-1e33-4a12-a313-4809e8fa4265";
+				PROVISIONING_PROFILE_SPECIFIER = MDMClientApp_Dist_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = MDMDeviceConfig/Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B7BDB621F84F6CB0055F69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3069FDA058361515490CBF6 /* Pods-MDMDeviceConfig.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MDMDeviceConfig/MDMDeviceConfig.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KAHUNA SYSTEMS PRIVATE LIMITED";
+				DEVELOPMENT_TEAM = GD37G3RSL6;
+				INFOPLIST_FILE = MDMDeviceConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kahuna.MDMClientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3ed89f80-1e33-4a12-a313-4809e8fa4265";
+				PROVISIONING_PROFILE_SPECIFIER = MDMClientApp_Dist_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = MDMDeviceConfig/Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B7BDB491F84F6CB0055F69F /* Build configuration list for PBXProject "MDMDeviceConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7BDB5E1F84F6CB0055F69F /* Debug */,
+				4B7BDB5F1F84F6CB0055F69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B7BDB601F84F6CB0055F69F /* Build configuration list for PBXNativeTarget "MDMDeviceConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7BDB611F84F6CB0055F69F /* Debug */,
+				4B7BDB621F84F6CB0055F69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B7BDB461F84F6CB0055F69F /* Project object */;
+}
